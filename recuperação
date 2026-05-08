@@ -1,0 +1,112 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/luciluci0/projeto-ds/blob/main/recupera%C3%A7%C3%A3o\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Wf5KrEb6vrkR"
+      },
+      "source": [
+        "# Conheça o Colab"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def mensagem(texto):\n",
+        "  print(texto)\n",
+        "\n",
+        "peso1 = 50\n",
+        "peso2 = 25\n",
+        "peso3 = 25\n",
+        "peso4 = 100\n",
+        "peso5 = 100\n",
+        "\n",
+        "nome = input(\"digite o nome do aluno:\")\n",
+        "\n",
+        "nota1 = float(input(f\"Digite a nota da Avaliação 1 (peso {peso1}):\"))\n",
+        "nota2 = float(input(f\"Digite a nota da Avaliação 2 (peso {peso2}):\"))\n",
+        "nota3 = float(input(f\"Digite a nota da Avaliação 3 (peso {peso3}):\"))\n",
+        "nota4 = float(input(f\"Digite a nota da Avaliação 4 (peso {peso4}):\"))\n",
+        "nota5 = float(input(f\"Digite a nota da Avaliação 5 (peso {peso5}):\"))\n",
+        "\n",
+        "soma_peso = peso1 + peso2 + peso3 + peso4 + peso5\n",
+        "\n",
+        "media = (\n",
+        "    (nota1 * peso1) +\n",
+        "    (nota2 * peso2) +\n",
+        "    (nota3 * peso3) +\n",
+        "    (nota4 * peso4) +\n",
+        "    (nota5 * peso5)\n",
+        "    ) / soma_peso\n",
+        "\n",
+        "mensagem(f\"Olá {nome}, aqui estão suas notas:\")\n",
+        "\n",
+        "print(f\"Nota 1 = {nota1}\")\n",
+        "print(f\"Nota 2 = {nota2}\")\n",
+        "print(f\"Nota 3 = {nota3}\")\n",
+        "print(f\"Nota 4 = {nota4}\")\n",
+        "print(f\"Nota 5 = {nota5}\")\n",
+        "\n",
+        "print(f\"Sua média final é igual a:{media:.2f}\")\n",
+        "\n",
+        "if media >= 70:\n",
+        "  print(\"Você está Aprovado\")\n",
+        "else:\n",
+        "  print(\"Você está reprovado\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H-5PtUBOtuMl",
+        "outputId": "2360312f-4b1b-4d18-c8a3-bbf1a1d5c787"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite o nome do aluno:45\n",
+            "Digite a nota da Avaliação 1 (peso 50):100\n",
+            "Digite a nota da Avaliação 2 (peso 25):100\n",
+            "Digite a nota da Avaliação 3 (peso 25):100\n",
+            "Digite a nota da Avaliação 4 (peso 100):75\n",
+            "Digite a nota da Avaliação 5 (peso 100):75\n",
+            "Olá 45, aqui estão suas notas:\n",
+            "Nota 1 = 100.0\n",
+            "Nota 2 = 100.0\n",
+            "Nota 3 = 100.0\n",
+            "Nota 4 = 75.0\n",
+            "Nota 5 = 75.0\n",
+            "Sua média final é igual a:83.33\n",
+            "Você está Aprovado\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Conheça o Colab",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
